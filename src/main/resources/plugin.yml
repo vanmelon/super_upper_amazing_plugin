@@ -1,0 +1,5 @@
+name: super_upper_amazing_plugin
+version: '${project.version}'
+main: man.burr.a_super_amazing_plugin.Super_upper_amazing_plugin
+api-version: '1.20'
+

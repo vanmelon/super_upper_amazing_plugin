@@ -31,7 +31,7 @@
 ### tibakemelingspørsmål bruker 2
 
 
-## endringer etter brukertesting
+## implementasjon
 
 # Litteaturliste
 chatGPT: https://chat.openai.com

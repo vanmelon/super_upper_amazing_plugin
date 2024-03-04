@@ -1,5 +1,6 @@
-name: super_upper_amazing_plugin
-version: '1.0.0-1.20.4-SNAPSHOT'
-main: man.burr.a_super_amazing_plugin.Super_upper_amazing_plugin
-api-version: '1.20'
-
+name: Super_upper_amazing_plugin
+version: ${roject.version}
+main: man.burr.a_super_amazing_plugin
+api-version: 1.20.4
+authors: [ the boy man ]
+description: no need

@@ -24,21 +24,19 @@ public class TimeBasedEventsPlugin extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        // Her kan du implementere en velkomstmelding eller lignende
-        // For eksempel:
+        // velkomstmelding når noen logger inn på serveren
         event.getPlayer().sendMessage("welcome to the dreamscape of reality");
     }
 
     public void checkTimeBasedEvents() {
         // Sjekk tid og utfør hendelser basert på tid
-        // Her kan du legge til logikk for timebaserte hendelser
         long timeInMillis = Bukkit.getWorld("world").getTime(); // Tid i millisekunder
         int hour = (int) (timeInMillis / 1000) / 3600; // Deler på 1000 for å konvertere til sekunder, deretter på 3600 for å konvertere til timer
-        if (hour == 12) { // Eksempel: Hendelse som skjer kl. 12
+        if (hour == 12) { // Hendelse som skjer kl. 12
             // Utfør handling for kl. 12
             Bukkit.broadcastMessage("the golden hour is upon uss");
-        } else if (hour == 20) { // Eksempel: Hendelse som skjer kl. 20
-            // Utfør handling for kl. 18
+        } else if (hour == 20) { //Hendelse som skjer kl. 20
+            // Utfør handling for kl. 20
             Bukkit.broadcastMessage("the hall of meny has has oppend is door");
         }
     }

@@ -38,6 +38,11 @@ public class TimeBasedEventsPlugin extends JavaPlugin implements Listener {
         } else if (hour == 20) { //Hendelse som skjer kl. 20
             // Utfør handling for kl. 20
             Bukkit.broadcastMessage("the hall of meny has has oppend is door");
+        } else if (hour == 14) {
+            Bukkit.broadcastMessage("if time was not linjer");
         }
     }
 }
+
+//Could not load 'plugins/original-a_super_amazing_plugin-1.0.0-1.20.>
+//org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.20.4

@@ -44,5 +44,5 @@ public class TimeBasedEventsPlugin extends JavaPlugin implements Listener {
     }
 }
 
-//Could not load 'plugins/original-a_super_amazing_plugin-1.0.0-1.20.>
+//Could not load plugins/original-a_super_amazing_plugin-1.0.0-1.20.>
 //org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.20.4

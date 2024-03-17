@@ -17,17 +17,28 @@ dette steget har jeg slit med. først så trode jeg at jeg måtte implementere e
 
 ## Brukertest
 ### Oppgaver til brukeren
-
+1. hvar
+2. hvar
+3. gg
 
 ### Tilbakemeldingsspørsmål
-
+1.osen hvil det bli mer synelig får brukeren
+2.
+3.
+4.
+5.
 
 ### bruker 1
+beskrivelse:
 ### tibakemeldingspørsmål bruker 1
 
-
 ### bruker 2
+beskrivelse:
 ### tibakemeldingspørsmål bruker 2
+
+### bruker 3
+beskrivelse:
+### tibakemeldingspørsmål bruker 3
 
 
 ## implementasjon

@@ -24,25 +24,22 @@ public class TimeBasedEventsPlugin extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        // velkomstmelding når noen logger inn på serveren
-        event.getPlayer().sendMessage("welcome to the dreamscape of reality");
+        // velkomstmelding når du logger inn på serveren
+        event.getPlayer().sendMessage("Welcome to the dreamscape of reality!");
     }
 
     public void checkTimeBasedEvents() {
         // Sjekk tid og utfør hendelser basert på tid
-        long timeInMillis = Bukkit.getWorld("world").getTime(); // Tid i millisekunder
-        int hour = (int) (timeInMillis / 1000) / 3600; // Deler på 1000 for å konvertere til sekunder, deretter på 3600 for å konvertere til timer
+        long timeInTicks = Bukkit.getWorld("world").getTime(); // Tid i ticks
+        int hour = (int) (timeInTicks / 1000) / 72; // Deler på 1000 for å konvertere til sekunder, deretter på 72 for å konvertere til timer (1 time = 72 000 ticks i Minecraft)
         if (hour == 12) { // Hendelse som skjer kl. 12
             // Utfør handling for kl. 12
-            Bukkit.broadcastMessage("the golden hour is upon uss");
+            Bukkit.broadcastMessage("The golden hour is upon us!");
         } else if (hour == 20) { //Hendelse som skjer kl. 20
             // Utfør handling for kl. 20
-            Bukkit.broadcastMessage("the hall of meny has has oppend is door");
+            Bukkit.broadcastMessage("The hall of many has opened its doors!");
         } else if (hour == 14) {
-            Bukkit.broadcastMessage("if time was not linjer");
+            Bukkit.broadcastMessage("Time has been altered!");
         }
     }
 }
-
-//Could not load plugins/original-a_super_amazing_plugin-1.0.0-1.20.>
-//org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.20.4

@@ -1,6 +1,9 @@
 package man.burr.a_super_amazing_plugin;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Particle;
+import org.bukkit.Sound;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -24,8 +27,15 @@ public class TimeBasedEventsPlugin extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        // velkomstmelding når du logger inn på serveren
+        // velkomstmelding når noen logger inn på serveren
         event.getPlayer().sendMessage("Welcome to the dreamscape of reality!");
+
+        // Spill en lyd når noen logger seg inn
+        event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
+
+        // Vis partikler når noen logger seg inn
+        Location location = event.getPlayer().getLocation();
+        location.getWorld().spawnParticle(Particle.EXPLOSION_LARGE, location, 1);
     }
 
     public void checkTimeBasedEvents() {
